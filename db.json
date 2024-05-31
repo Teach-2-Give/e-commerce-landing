@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "Watch",
+      "price": "300",
+      "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/50/0270351/1.jpg?9009",
+      "category": "Watch",
+      "id": "639d"
+    },
+    {
+      "id": "7aef",
+      "name": "TTTY-watch",
+      "price": "800",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObXmxjIpCmO-E35-fau4AHQpvlKOjElUBOA&s",
+      "category": "Watch"
+    },
+    {
+      "id": "7aef",
+      "name": "TTTY-watch",
+      "price": "800",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObXmxjIpCmO-E35-fau4AHQpvlKOjElUBOA&s",
+      "category": "Watch"
+    },
+    {
+      "id": "7aef",
+      "name": "TTTY-watch",
+      "price": "800",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObXmxjIpCmO-E35-fau4AHQpvlKOjElUBOA&s",
+      "category": "Watch"
+    },
+    {
+      "name": "Watch",
+      "price": "300",
+      "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/50/0270351/1.jpg?9009",
+      "category": "Watch",
+      "id": "609d"
+    }
+  ]
+}

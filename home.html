@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Landing Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">eCommerce</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Products">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="account-actions">
+                <a href="#"><i class="fa fa-user"></i> Account</a>
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <!--<a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="price-total"></i> $0.00</a>
+                -->
+                <!-- Add data attributes to cart icon for cart count and total price -->
+            <a href="#" class="cart-icon"><i class="fa fa-shopping-cart"></i> <span id="cart-count">0</span> <span id="cart-total">$0.00</span></a>
+
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Customer Services</a></li>
+                <li><a href="#">Trending Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Special Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>New Year Sale Offer 2024</h1>
+                <p>20% OFF</p>
+                <button>Start Shopping</button>
+            </div>
+            <img src="https://mehedi53423.github.io/Panda-Commerce/images/banner-images/headphone.png" alt="Sale Banner" id="banner-placeholder">
+        </section>
+        <section class="categories">
+            <h2>Our Top Categories</h2>
+            <div class="categories-list">
+                <div class="category-item"><i class="fa fa-mobile-alt"></i> <span>Electronics</span></div>
+                <div class="category-item"><i class="fa fa-book"></i> <span>Books</span></div>
+                <div class="category-item"><i class="fa fa-gem"></i> <span>Jewelry</span></div>
+                <div class="category-item"><i class="fa fa-child"></i> <span>Toys</span></div>
+                <div class="category-item"><i class="fa fa-basketball-ball"></i> <span>Sports</span></div>
+                <!--<div class="category-item"><i class="fa fa-watch"></i> <span>Watches</span></div>-->
+                <div class="category-item"><i class="fa fa-gamepad"></i> <span>Games</span></div>
+                <div class="category-item"><i class="fa fa-paint-brush"></i> <span>Fine Arts</span></div>
+                <div class="category-item"><i class="fa fa-laptop"></i> <span>Software</span></div>
+                <div class="category-item"><i class="fa fa-couch"></i> <span>Furniture</span></div>
+            </div>
+        </section>
+        <section class="popular-products">
+            <h2>Popular Products 2023</h2>
+            <div class="product-grid">
+                <!--<div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Product Image">
+                    <h3>Product Name Will Be Here</h3>
+                    <p>Brand Name</p>
+                    <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>| 89 Sold</span>
+                    </div>
+                    <p class="product-price">$24.56</p>
+                    <div class="buttons">
+                        <button class="buy-now">Buy</button>
+                        <button class="add-to-cart"><i class="fa fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                -->
+            </div>
+            <!-- Cart modal -->
+                <div id="cart-modal" class="cart-modal">
+                  <div class="cart-modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cart Details</h2>
+                    <div id="cart-items"></div>
+                    <div class="cart-summary">
+                      <p>Total Items: <span id="cart-total-items">0</span></p>
+                      <p>Total Price: <span id="cart-total-price">$0.00</span></p>
+                    </div>
+                    <div class="cart-buttons">
+                      <button id="checkout-button">Checkout</button>
+                      <button id="clear-cart-button">Clear Cart</button>
+                    </div>
+                  </div>
+                </div>
+
+        </section>
+    </main>
+      <script src="src/user.js"></script>
+    <footer>
+        <p>© 2024 eCommerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 240px;
+    background: #343a40;
+    color: #fff;
+    height: 65vh;
+    padding: 20px 0;
+    box-shadow: #343a40;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo .logo-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .logo .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-subtext{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.sidebar ul li a:hover {
+    background: #495057;
+    border-radius: 4px;
+}
+
+.sidebar .notification {
+    background: #dc3545;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+    float: right;
+    margin-top: -10px;
+}
+
+.main-content {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:0px;
+}
+
+.content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-bar h2 {
+    margin: 0;
+}
+
+.header-bar .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header-bar .actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-bar .actions .export-btn {
+    background: #007bff;
+    color: #fff;
+}
+
+.header-bar .actions .create-btn {
+    background: #007bff;
+    color: #fff;
+}
+
+.header-bar .actions .export-btn:hover,
+.header-bar .actions .create-btn:hover {
+    background: #0056b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filters input, .filters select {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    border: 1px solid #064686;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+}
+
+.product-card {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    height: 300px;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+
+.product-card:hover img {
+    transform: rotateY(-180deg) scale(1.05);
+}
+
+.product-details {
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-actions button:first-child {
+    background: #007bff;
+    color: #fff;
+}
+
+.product-actions button:last-child {
+    background: #dc3545;
+    color: #fff;
+}
+
+.product-actions button:first-child:hover {
+    background: #0056b3;
+}
+
+.product-actions button:last-child:hover {
+    background: #c82333;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: 1px solid #064686;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.location-details {
+    width: 93%;
+    height: 183px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+    background: #343a40;
+    color: white;
+    text-align: center;
+}
+.location-details:hover {
+    background: #495057;
+}
+
+.pagination button:first-child,
+.pagination button:last-child {
+    background: #007bff;
+    border: none;
+    color: #fff;
+}
+
+.pagination button:first-child:hover,
+.pagination button:last-child:hover {
+    background: #0056b3;
+}
+
+#product-form {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateY(-100%) translateX(-50%);
+    transition: transform 0.9s ease-out;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#product-form.show {
+    transform: translateY(40%) translateX(-50%);
+}
+
+#form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#form-content input[type="text"],
+#form-content input[type="number"],
+#form-content select,
+#form-content button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+#product-form button {
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+}
+
+#product-form button:hover {
+    background-color: #0056b3;
+}
+
+#cancel-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        order: 1;
+        overflow-y: auto;
+    }
+    .main-content {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        order: 2;
+    }
+    .location-details {
+        width: 100%;
+        order: 3;
+        display: none;
+    }
+    .product-card {
+        width: 100%;
+        height: auto;
+    }
+}

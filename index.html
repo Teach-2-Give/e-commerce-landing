@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <!--<span class="logo-text">e-</span>-->
+                <span class="logo-subtext">eCommerce</span>
+            </div>
+            <ul>
+                <li><a href="#" onclick="location.reload();"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="404.html" ><i class="fas fa-shopping-bag"></i> Products</a></li>
+                <li><a href="#" id="orders-link"><i class="fas fa-clipboard-list"></i> Orders</a></li>
+                <li><a href="#" id="customers-link"><i class="fas fa-users"></i> Customers</a></li>
+                <li><a href="#" id="statistics-link"><i class="fas fa-chart-bar"></i> Statistics</a></li>  
+            </ul>
+        </div>
+        <div class="location-details">
+            <h3>Location</h3>
+            <p>121 Main Street, Nairobi, Kenya</p>
+            <p>+254 70599 9999</p>
+            <p>info@example.com</p>
+            <div class="location-icon">
+                <i class="fas fa-map-marker-alt" style="color: white;"></i>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/4715/4715330.png" alt="Profile">
+            </div>
+        </header>
+        <div class="content">
+            <div class="header-bar">
+                <h2>eCommerce</h2>
+                <div class="actions">
+                    <button class="create-btn" id="create-btn">Create</button>
+                </div>
+            </div>
+            <div class="filters">
+                <input type="text" placeholder="Search">
+                <select class="filter">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Watch">Watch</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Phones">Phones</option>
+                    <option value="TV & Monitors">TV & Monitors</option>
+                    <option value="Laptops">Laptops</option>
+                </select>
+                <select>
+                    <option value="">Last added</option>
+                </select>
+            </div>
+            <div id="product-form" style="display: none;">
+                <i id="cancel-icon" class="fas fa-times"></i>
+                <div id="form-content">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" placeholder="Product Name">
+                    
+                    <label for="product-price">Product Price</label>
+                    <input type="number" id="product-price" placeholder="Product Price">
+                    
+                    <label for="product-image">Image URL</label>
+                    <input type="text" id="product-image" placeholder="Image URL">
+                    
+                    <label for="product-category">Category</label>
+                    <select id="product-category">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="Watch">Watch</option>
+                        <option value="Clothes">Clothes</option>
+                        <option value="Phones">Phones</option>
+                        <option value="TV & Monitors">TV & Monitors</option>
+                        <option value="Laptops">Laptops</option>
+                    </select>
+                    
+                    <button id="submit-button">Create</button>
+                </div>
+            </div>
+
+        
+            <div class="products-grid">
+                <div class="product-card" draggable="true">
+                    <div class="product-details">
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="dist/app.js"></script>
+<script src="dist/sortable.js"></script>
+<script src="dist/sidebar.js"></script>
+</html>
